@@ -1,0 +1,50 @@
+body {
+	font-size: 1.5em;
+    background-color: #003399;
+    margin: 20px;
+    padding: 40px;
+}
+h1 {
+	font-family: Arial;
+}
+h2{
+	margin: 25px;
+}
+h4 {
+	font-family: Arial;
+	line-height: 200%;
+    margin: 40px;
+}
+img {
+	margin-left: 35px;
+}
+a:link {
+	color: #00ffff;
+}
+a:visited{
+	color: #00ccff;
+}
+a:hover{
+	color: #000066;
+}
+iframe{
+	margin: 16px;
+}
+#bottomText{
+	font-family: Arial;
+	color: #000000;
+	font-size: 0.65em;
+	margin: 25px;
+}
+#bibliography{
+	font-size: 1.3em;
+}
+.navbar-default {
+  background-color:teal;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+ol{
+	font-family: Arial;
+	margin: 25px;
+}
