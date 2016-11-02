@@ -69,6 +69,16 @@
 
             //Game Loop:
             window.setInterval(function () {
+                if(dead){
+                    respawnTimer-=1;
+                    if(respawnTimer === 0){
+                        snake = new Snake(Math.floor(gridSize.x / 2), Math.floor(gridSize.y / 2));
+                        dead = false
+                    }
+                }else{
+                    respawnTimer = 7
+                }
+
                 if (!dead) {
 
                     var p = snake.nextPoint();
@@ -84,8 +94,6 @@
                     }else{
                         snake.move(eat);
                     }
-
-
                 }
                 ctx.save();
                 ctx.setTransform(1, 0, 0, 1, 0, 0);
